@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style type="text/css">
+    .btn{border-radius:2px;display:inline-block;padding:14px 24px;line-height:1;letter-spacing:1px;text-transform:uppercase;text-decoration:none;text-align:center;-webkit-transition:all 0.3s;transition:all 0.3s;cursor:pointer;color:#ffffff;outline:0;background:#0863af;border:1px solid #0863af;box-sizing:border-box;margin:0}.btn:hover{background:#06477e;border-color:#06477e}.btn--disabled,.btn--disabled:hover{cursor:default}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="number"],input[type="tel"],input[type="range"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="color"],textarea,select{box-shadow:none;box-sizing:border-box;background:none;display:block;margin:0;padding:12px;width:100%;line-height:30px;font-size:18px;color:#576166;border:1px solid #ccc;border-radius:2px;background:#fafafa;outline:none;margin-bottom:10px}input[type="radio"]{margin-bottom:22px;margin-right:8px}select{height:40px;line-height:40px}
+    </style>
+</head>
+<body>
+    <div id="paybutton" style="text-align:center">
+        <form action="https://da-dev.us/feefavor/submit" method="POST">Select County and Name Search or Document Retrieval for Pricing<br>
+            <select name="courthouse" id="courthouse" required>
+                <option selected disabled value="">Select County</option>
+                <option value="Appling">Appling County</option>
+                <option value="Atkinson">Atkinson County</option>
+                <option value="Bacon">Bacon County</option>
+                <option value="Baker">Baker County</option>
+                <option value="Baldwin">Baldwin County</option>
+                <option value="Banks">Banks County</option>
+                <option value="Barrow">Barrow County</option>
+                <option value="Bartow">Bartow County</option>
+                <option value="Ben Hill">Ben Hill County</option>
+                <option value="Berrien">Berrien County</option>
+                <option value="Bibb">Bibb County</option>
+                <option value="Bleckley">Bleckley County</option>
+                <option value="Brantley">Brantley County</option>
+                <option value="Brooks">Brooks County</option>
+                <option value="Bryan">Bryan County</option>
+                <option value="Bulloch">Bulloch County</option>
+                <option value="Burke">Burke County</option>
+                <option value="Butts">Butts County</option>
+                <option value="Calhoun">Calhoun County</option>
+                <option value="Camden">Camden County</option>
+                <option value="Candler">Candler County</option>
+                <option value="Carroll">Carroll County</option>
+                <option value="Catoosa">Catoosa County</option>
+                <option value="Charlton">Charlton County</option>
+                <option value="Chatham">Chatham County</option>
+                <option value="Chattahoochee">Chattahoochee County</option>
+                <option value="Chattooga">Chattooga County</option>
+                <option value="Cherokee">Cherokee County</option>
+                <option value="Clarke">Clarke County</option>
+                <option value="Clay">Clay County</option>
+                <option value="Clayton">Clayton County</option>
+                <option value="Clinch">Clinch County</option>
+                <option value="Cobb">Cobb County</option>
+                <option value="Coffee">Coffee County</option>
+                <option value="Colquitt">Colquitt County</option>
+                <option value="Columbia">Columbia County</option>
+                <option value="Cook">Cook County</option>
+                <option value="Coweta">Coweta County</option>
+                <option value="Crawford">Crawford County</option>
+                <option value="Crisp">Crisp County</option>
+                <option value="Dade">Dade County</option>
+                <option value="Dawson">Dawson County</option>
+                <option value="Decatur">Decatur County</option>
+                <option value="Dekalb">Dekalb County</option>
+                <option value="Dodge">Dodge County</option>
+                <option value="Dooly">Dooly County</option>
+                <option value="Dougherty">Dougherty County</option>
+                <option value="Douglas">Douglas County</option>
+                <option value="Early">Early County</option>
+                <option value="Echols">Echols County</option>
+                <option value="Effingham">Effingham County</option>
+                <option value="Elbert">Elbert County</option>
+                <option value="Emanuel">Emanuel County</option>
+                <option value="Evans">Evans County</option>
+                <option value="Fannin">Fannin County</option>
+                <option value="Fayette">Fayette County</option>
+                <option value="Floyd">Floyd County</option>
+                <option value="Forsyth">Forsyth County</option>
+                <option value="Franklin">Franklin County</option>
+                <option value="Fulton">Fulton County</option>
+                <option value="Gilmer">Gilmer County</option>
+                <option value="Glascock">Glascock County</option>
+                <option value="Glynn">Glynn County</option>
+                <option value="Gordon">Gordon County</option>
+                <option value="Grady">Grady County</option>
+                <option value="Greene">Greene County</option>
+                <option value="Gwinnett">Gwinnett County</option>
+                <option value="Habersham">Habersham County</option>
+                <option value="Hall">Hall County</option>
+                <option value="Hancock">Hancock County</option>
+                <option value="Haralson">Haralson County</option>
+                <option value="Harris">Harris County</option>
+                <option value="Hart">Hart County</option>
+                <option value="Heard">Heard County</option>
+                <option value="Henry">Henry County</option>
+                <option value="Houston">Houston County</option>
+                <option value="Irwin">Irwin County</option>
+                <option value="Jackson">Jackson County</option>
+                <option value="Jasper">Jasper County</option>
+                <option value="Jeff Davis">Jeff Davis County</option>
+                <option value="Jefferson">Jefferson County</option>
+                <option value="Jenkins">Jenkins County</option>
+                <option value="Johnson">Johnson County</option>
+                <option value="Jones">Jones County</option>
+                <option value="Lamar">Lamar County</option>
+                <option value="Lanier">Lanier County</option>
+                <option value="Laurens">Laurens County</option>
+                <option value="Lee">Lee County</option>
+                <option value="Liberty">Liberty County</option>
+                <option value="Lincoln">Lincoln County</option>
+                <option value="Long">Long County</option>
+                <option value="Lowndes">Lowndes County</option>
+                <option value="Lumpkin">Lumpkin County</option>
+                <option value="Macon">Macon County</option>
+                <option value="Madison">Madison County</option>
+                <option value="Marion">Marion County</option>
+                <option value="McDuffie">McDuffie County</option>
+                <option value="McIntosh">McIntosh County</option>
+                <option value="Meriwether">Meriwether County</option>
+                <option value="Miller">Miller County</option>
+                <option value="Mitchell">Mitchell County</option>
+                <option value="Monroe">Monroe County</option>
+                <option value="Montgomery">Montgomery County</option>
+                <option value="Morgan">Morgan County</option>
+                <option value="Murray">Murray County</option>
+                <option value="Muscogee">Muscogee County</option>
+                <option value="Newton">Newton County</option>
+                <option value="Oconee">Oconee County</option>
+                <option value="Oglethorpe">Oglethorpe County</option>
+                <option value="Paulding">Paulding County</option>
+                <option value="Peach">Peach County</option>
+                <option value="Pickens">Pickens County</option>
+                <option value="Pierce">Pierce County</option>
+                <option value="Pike">Pike County</option>
+                <option value="Polk">Polk County</option>
+                <option value="Pulaski">Pulaski County</option>
+                <option value="Putnam">Putnam County</option>
+                <option value="Quitman">Quitman County</option>
+                <option value="Rabun">Rabun County</option>
+                <option value="Randolph">Randolph County</option>
+                <option value="Richmond">Richmond County</option>
+                <option value="Rockdale">Rockdale County</option>
+                <option value="Schley">Schley County</option>
+                <option value="Screven">Screven County</option>
+                <option value="Seminole">Seminole County</option>
+                <option value="Spalding">Spalding County</option>
+                <option value="Stephens">Stephens County</option>
+                <option value="Stewart">Stewart County</option>
+                <option value="Sumter">Sumter County</option>
+                <option value="Talbot">Talbot County</option>
+                <option value="Taliaferro">Taliaferro County</option>
+                <option value="Tattnall">Tattnall County</option>
+                <option value="Taylor">Taylor County</option>
+                <option value="Telfair">Telfair County</option>
+                <option value="Terrell">Terrell County</option>
+                <option value="Thomas">Thomas County</option>
+                <option value="Tift">Tift County</option>
+                <option value="Toombs">Toombs County</option>
+                <option value="Towns">Towns County</option>
+                <option value="Treutlen">Treutlen County</option>
+                <option value="Troup">Troup County</option>
+                <option value="Turner">Turner County</option>
+                <option value="Twiggs">Twiggs County</option>
+                <option value="Union">Union County</option>
+                <option value="Upson">Upson County</option>
+                <option value="Walker">Walker County</option>
+                <option value="Walton">Walton County</option>
+                <option value="Ware">Ware County</option>
+                <option value="Warren">Warren County</option>
+                <option value="Washington">Washington County</option>
+                <option value="Wayne">Wayne County</option>
+                <option value="Webster">Webster County</option>
+                <option value="Wheeler">Wheeler County</option>
+                <option value="White">White County</option>
+                <option value="Whitfield">Whitfield County</option>
+                <option value="Wilcox">Wilcox County</option>
+                <option value="Wilkes">Wilkes County</option>
+                <option value="Wilkinson">Wilkinson County</option>
+                <option value="Worth">Worth County</option>
+            </select>
+            <br>
+            <label><input type="radio" name="doctype" value="Name Search">Name Search</label>
+            <label><input type="radio" name="doctype" value="Document Retrieval" required>Document Retrieval</label>
+            <br>
+            <textarea name="query" id="query" placeholder="Details of what you want searched? (Name, Court, Type)" required></textarea>
+            <br>
+            <input name="email" type="text" placeholder="Email" id="email" required>
+            <br>
+            <input name="phone" type="text", placeholder="Phone number for SMS" id="phone" required>
+            <br><br>
+            <!-- <script
+                src="https://checkout.stripe.com/checkout.js"
+                class="stripe-button"
+                data-key="pk_mbTY9NMHLkbq3UHqVUxH0WwQFyVqa"
+                data-amount=""
+                data-name="feefavor"
+                data-description=""
+                data-label="Submit"
+                data-panel-label="Submit"
+                data-zip-code="true"
+                data-image="http://feefavor.wpengine.com/wp-content/uploads/2018/02/feefavor_favicon.png"
+                data-locale="auto">
+            </script> -->
+            <!-- <script>document.getElementsByClassName("stripe-button-el")[0].style.display = "none";</script> -->
+            <button type="submit" class="et_pb_pricing_table_button et_pb_button et_pb_custom_button_icon" data-icon="5">Submit</button>
+        </form>
+<div class="pricing-container" style="display: none;">
+    <h3 class="pricing-container--heading">Document Prices</h3>
+    <div class="pricing-items"></div>
+    <p class="pricing-small"><sup>*</sup> Listed fees are in addition to applicable fees of 3.59%.</p>
+</div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script>
+    ( function( $ ) {
+        function updateCourts( list ){
+            var courthouses = list.courthouses.sort();
+            $( '#courthouse' ).empty();
+            $( '#courthouse' ).append( $( "<option>", { disabled: true, selected: true } ).text( "Select County" ) );
+            courthouses.forEach( function( courthouse ){
+                $('select#courthouse').append( $( "<option>", { value : courthouse } ).text( courthouse + " County" ) );
+            });
+        }
+        function getPricing( data ){
+            var pricing = [];
+            var typeToShow = $( 'input[name=doctype]:checked' ).val();
+            for( var item in data ){
+                var details = data[item];
+                pricing.push( itemTemplate( item, details.price, details.copyCost, details.type ) );
+            }
+            $( '.pricing-items' ).html( $( pricing.join( '' ) ) );
+            renderPricing( typeToShow );
+        }
+        function renderPricing( typeToShow ){
+            if( typeToShow ){
+                $( '.pricing-container' ).show();
+                $( '.pricing-item' ).hide();
+                if( typeToShow === 'Document Retrieval' ){
+                    $( '.pricing-item' ).filter( '.doc' ).show();
+                }
+                if( typeToShow === 'Name Search' ){
+                    $( '.pricing-item' ).filter( '.name' ).show();
+                }
+            }
+        }
+        function itemTemplate( name, price, cost, type ){
+            var priceDisplay = '$<span class="pricing-item--price-callout">' + price.toFixed( 2 ) + '</span> / retrieval';
+            var costDisplay = 'Average copy cost (per page): $' + cost.toFixed( 2 ) + '';
+            var template = '<div class="pricing-item ' + type + '" style="display: none;">';
+                    template += '<h4 class="pricing-item--heading">' + name + '</h4>';
+                    template += '<p class="pricing-item--price">' +  priceDisplay + ' <sup>*</sup></p>';
+                    template += '<p class="pricing-item--cost">' + costDisplay + '</p>';
+                template += '</div>';
+            return template;
+        }
+        $(document).ready(function() {
+            $.getJSON( 'https://da-dev.us/feefavor/courthouses', updateCourts );
+            $( "input[name=doctype]" ).change( function( e ){
+                renderPricing( $( e.target ).val() );
+            });
+            $( "#courthouse" ).change( function(){
+                var value = $(this).val();
+                if(value) {
+                    $.getJSON( 'https://da-dev.us/feefavor/rates/' + value, getPricing );
+                }
+            });
+        });
+    } )( jQuery );
+</script>
+    <script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>
